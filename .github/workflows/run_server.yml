@@ -1,0 +1,28 @@
+﻿name: Run local server
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  serve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Start local server
+        run: python -m http.server 8000 &
+      - name: Wait for server and verify HTML
+        run: |
+          for i in {1..10}; do
+            if curl --silent --fail http://127.0.0.1:8000/al_ilm_institute.html; then
+              echo 'Server is reachable';
+              exit 0;
+            fi
+            sleep 1
+          done
+          echo 'Server did not respond in time';
+          exit 1
