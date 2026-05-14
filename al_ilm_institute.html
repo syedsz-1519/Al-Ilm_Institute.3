@@ -344,12 +344,13 @@ section{padding:5rem 2rem}
   background:linear-gradient(135deg,var(--navy),var(--green-dark));
   border-radius:24px;
   aspect-ratio:4/5;
+  min-height:520px;
   display:flex;align-items:center;justify-content:center;
   position:relative;overflow:hidden;
 }
 .teacher-initials{
   font-family:'Playfair Display',serif;
-  font-size:5rem;font-weight:700;color:rgba(255,255,255,0.15);
+  font-size:5.5rem;font-weight:700;color:rgba(255,255,255,0.15);
   letter-spacing:0.1em;
 }
 .teacher-overlay{
@@ -359,17 +360,17 @@ section{padding:5rem 2rem}
 }
 .teacher-overlay-name{
   font-family:'Playfair Display',serif;
-  font-size:1.3rem;color:var(--white);font-weight:600;
+  font-size:1.55rem;color:var(--white);font-weight:600;
 }
-.teacher-overlay-title{font-size:0.8rem;color:var(--gold-light)}
+.teacher-overlay-title{font-size:0.95rem;color:var(--gold-light)}
 .teacher-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem}
 .teacher-tag{
-  font-size:0.75rem;padding:0.35rem 0.8rem;border-radius:50px;font-weight:500;
+  font-size:0.85rem;padding:0.45rem 0.9rem;border-radius:50px;font-weight:500;
   background:rgba(45,122,79,0.12);color:var(--green-dark);border:1px solid rgba(45,122,79,0.2);
 }
 .teacher-quote{
   font-family:'Amiri',serif;
-  font-size:1.4rem;color:var(--gold);line-height:1.5;
+  font-size:1.65rem;color:var(--gold);line-height:1.45;
   margin-bottom:1.5rem;
 }
 .teacher-bio{font-size:0.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.5rem}
@@ -457,18 +458,18 @@ section{padding:5rem 2rem}
 .dua-banner{
   background:var(--navy);
   border-radius:16px;
-  padding:2rem;
+  padding:2.5rem;
   text-align:center;
   margin-top:2rem;
 }
 .dua-text{
   font-family:'Amiri',serif;
-  font-size:1.1rem;
-  color:rgba(255,255,255,0.7);
-  line-height:1.7;
+  font-size:1.4rem;
+  color:rgba(255,255,255,0.85);
+  line-height:1.75;
   font-style:italic;
 }
-.dua-attr{font-size:0.8rem;color:var(--gold);margin-top:0.5rem;font-weight:500}
+.dua-attr{font-size:0.95rem;color:var(--gold);margin-top:0.75rem;font-weight:500}
 
 /* ── FAQ ── */
 .faq-section{background:var(--cream-dark)}
@@ -582,24 +583,25 @@ footer{
   max-width:1100px;margin:0 auto;
   display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;
   margin-bottom:2.5rem;
+  padding-top:1rem;
 }
 .footer-brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
-.footer-brand-logo img{height:36px;width:36px;object-fit:contain}
-.footer-brand-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);font-weight:700}
-.footer-brand-desc{font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;margin-bottom:1.25rem}
+.footer-brand-logo img{height:38px;width:38px;object-fit:contain}
+.footer-brand-name{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--gold);font-weight:700}
+.footer-brand-desc{font-size:0.9rem;color:rgba(255,255,255,0.45);line-height:1.75;margin-bottom:1.25rem}
 .footer-hadith{
   font-family:'Amiri',serif;
-  font-size:0.82rem;color:rgba(201,168,76,0.7);
-  line-height:1.6;
+  font-size:1rem;color:rgba(201,168,76,0.85);
+  line-height:1.75;
   border-left:2px solid rgba(201,168,76,0.3);
-  padding-left:0.75rem;
+  padding-left:0.85rem;
   font-style:italic;
 }
-.footer-col-title{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1rem}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
-.footer-links a{font-size:0.83rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s}
+.footer-col-title{font-size:0.9rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:1rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+.footer-links a{font-size:0.95rem;color:rgba(255,255,255,0.65);text-decoration:none;transition:color 0.2s}
 .footer-links a:hover{color:var(--gold)}
-.footer-contact-row{display:flex;align-items:center;gap:8px;font-size:0.82rem;color:rgba(255,255,255,0.45);margin-bottom:0.5rem}
+.footer-contact-row{display:flex;align-items:center;gap:8px;font-size:0.95rem;color:rgba(255,255,255,0.7);margin-bottom:0.75rem}
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,0.07);
   padding-top:1.25rem;
@@ -1192,22 +1194,29 @@ footer{
         <div class="contact-item">
           <div class="contact-item-icon">📞</div>
           <div>
-            <div class="contact-item-label">Call / WhatsApp</div>
-            <div class="contact-item-val">+91 6202538420</div>
+            <div class="contact-item-label">Call</div>
+            <div class="contact-item-val"><a href="tel:+916202538420">+91 6202538420</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-val"><a href="https://wa.me/916202538420?text=Assalamu%20Alaykum!%20I%20am%20interested%20in%20AI%20ILM%20Institute." target="_blank" rel="noreferrer">Chat on WhatsApp</a></div>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-item-icon">📧</div>
           <div>
             <div class="contact-item-label">Email Address</div>
-            <div class="contact-item-val">alilminstitute3@gmail.com</div>
+            <div class="contact-item-val"><a href="mailto:alilminstitute3@gmail.com?subject=Inquiry%20for%20AI%20ILM%20Institute&body=Assalamu%20Alaykum%20Sister%20Saba,%0D%0A%0D%0AI%20would%20like%20to%20learn%20more%20about%20your%20courses.%0D%0A%0D%0ARegards,%0D%0A">alilminstitute3@gmail.com</a></div>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-item-icon">📸</div>
           <div>
             <div class="contact-item-label">Instagram</div>
-            <div class="contact-item-val">@al_ilm_institute_2025</div>
+            <div class="contact-item-val"><a href="https://www.instagram.com/al_ilm_institute_2025/" target="_blank" rel="noreferrer">@al_ilm_institute_2025</a></div>
           </div>
         </div>
         <div class="contact-item">
